@@ -12,7 +12,7 @@ export class AppComponent {
     
   }
   registrationForm=this.fb.group({
-    userName:['yao', [Validators.required, Validators.minLength(3), forbiddenNameValidator]],
+    userName:['yao', [Validators.required, Validators.minLength(3), forbiddenNameValidator(/xiao/)]],
     passWord:[''],
     confirmPassword:[''],
     address:this.fb.group({
